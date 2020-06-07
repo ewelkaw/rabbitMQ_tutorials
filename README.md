@@ -23,3 +23,17 @@ python -m pip install pika --upgrade
 $ python hello_world/hello_world_receive.py
 $ python hello_world/hello_world_send.py
 ```
+
+2. work_queues usage
+```bash
+# add two workes
+$ python work_queues/worker.py 
+$ python work_queues/worker.py 
+
+# add some tasks
+$ python work_queues/new_task.py First message.
+$ python work_queues/new_task.py Second message..
+$ python work_queues/new_task.py Third message...
+$ python work_queues/new_task.py Fourth message....
+$ python work_queues/new_task.py Fifth message.....
+```
